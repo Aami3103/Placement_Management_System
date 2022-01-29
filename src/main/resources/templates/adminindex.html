@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+<style>
+.style1 {
+ 
+  padding: 100px;
+  background: url(https://www.digicollect.com/assets/images/digi/hrms/hrms-04.jpg);
+  background-repeat: no-repeat;
+  background-size: 1100px 600px;
+}
+h2{ 
+    text-align: center;
+    background-color: royalblue;
+    border: black solid;
+}
+h1{
+    text-align: center;
+}
+</style>
+
+</head>
+<body >
+<div class=style1>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+
+   <h1><b style="color:white;">Welcome!!!</b></h1><br>
+   <h2><b style="color:pink;" > PLACEMENT MANAGEMENT </b></h1><br>
+   
+   <b style="color:magenta">PLACEMENT DETAILS</b> &nbsp;&nbsp;&nbsp;<a th:href="@{'/placementindex'}"><input type="submit" class="btn btn-info" value="Open" /></a><br><br><br>
+   <b style="color:magenta">COLLEGE DETAILS</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a th:href="@{'/collegeindex'}"><input type="submit" class="btn btn-info" value="Open" /></a><br><br><br>
+   <b style="color:magenta">STUDENT DETAILS</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a th:href="@{'/studentindex'}"><input type="submit" class="btn btn-info" value="Open" /></a><br><br><br>
+   
+   <form th:action="@{/logout}" method="post">
+        <input type="submit"  value="Logout" />
+    </form>
+    </div>
+</body>
+</html>
